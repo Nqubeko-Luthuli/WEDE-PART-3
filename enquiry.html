@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adopt, Volunteer or Sponsor an Animal | Enquiry | Ubuntu Paws Rescue</title>
+  <meta name="description" content="Enquire about adopting a rescued pet, volunteering or sponsoring an animal in Johannesburg and get an instant response.">
+  <meta name="keywords" content="adopt a rescue pet, volunteer at animal shelter Johannesburg, sponsor a rescue animal, adoption fee">
+  <meta name="author" content="Nqubeko Luthuli">
+  <meta property="og:title" content="Adopt, Volunteer or Sponsor an Animal | Enquiry | Ubuntu Paws Rescue">
+  <meta property="og:description" content="Enquire about adopting a rescued pet, volunteering or sponsoring an animal in Johannesburg and get an instant response.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <!-- Site header with logo and navigation (same on every page) -->
+  <header>
+    <a href="index.html" class="brand"><img src="images/logo.svg" alt="Ubuntu Paws Rescue logo" width="48" height="48"><span>Ubuntu Paws Rescue</span></a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">Menu</button>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="enquiry.html" class="active" aria-current="page">Enquiry</a></li><li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="content">
+    <h1>Enquiry</h1>
+    <p>Tell us how you would like to help. Fields marked * are required.</p>
+    <section class="reveal"><h2>Before you enquire</h2>
+<button class="acc-btn" aria-expanded="false" aria-controls="faq0">How much does adoption cost?</button><div class="acc-panel" id="faq0" hidden><p>Dogs are R1 200 and cats R800. This includes vaccination, sterilisation and a microchip.</p></div>
+<button class="acc-btn" aria-expanded="false" aria-controls="faq1">Do I need experience to volunteer?</button><div class="acc-panel" id="faq1" hidden><p>No. Every volunteer attends a short orientation before working with the animals.</p></div>
+<button class="acc-btn" aria-expanded="false" aria-controls="faq2">Where does my sponsorship go?</button><div class="acc-panel" id="faq2" hidden><p>Straight to food and vet care for the animals in our two shelters.</p></div>
+    </section>
+    <!-- Enquiry form: volunteer, sponsor or adoption, validated with JavaScript -->
+    <form id="enquiry-form" action="enquiry.html" method="get" novalidate>
+      <fieldset>
+        <legend>Your details</legend>
+<div class="field"><label for="name">Full name *</label><input type="text" id="name" name="name" autocomplete="name" required minlength="2"><p class="error" id="name-error" aria-live="polite"></p></div>
+<div class="field"><label for="email">Email address *</label><input type="email" id="email" name="email" autocomplete="email" required><p class="error" id="email-error" aria-live="polite"></p></div>
+<div class="field"><label for="phone">Phone number (optional)</label><input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="011 000 0000"><p class="error" id="phone-error" aria-live="polite"></p></div>
+      </fieldset>
+      <fieldset>
+        <legend>I would like to *</legend>
+        <label><input type="radio" id="type-volunteer" name="type" value="volunteer" required> Volunteer</label>
+        <label><input type="radio" id="type-sponsor" name="type" value="sponsor"> Become a sponsor</label>
+        <label><input type="radio" id="type-adopt" name="type" value="adopt"> Adopt an animal</label>
+        <p class="error" id="type-error" aria-live="polite"></p>
+        <div id="g-volunteer" hidden><div class="field"><label for="availability">Preferred volunteer days *</label><select id="availability" name="availability"><option value="">Choose days</option><option value="Weekdays">Weekdays</option><option value="Weekends">Weekends</option><option value="Both">Both</option></select><p class="error" id="availability-error" aria-live="polite"></p></div>
+</div>
+        <div id="g-sponsor" hidden><div class="field"><label for="amount">Monthly sponsorship amount *</label><select id="amount" name="amount"><option value="">Choose an amount</option><option value="100">R100</option><option value="250">R250</option><option value="500">R500</option></select><p class="error" id="amount-error" aria-live="polite"></p></div>
+</div>
+        <div id="g-adopt" hidden><div class="field"><label for="animal">Animal you are interested in *</label><select id="animal" name="animal"><option value="">Choose an animal</option></select><p class="error" id="animal-error" aria-live="polite"></p></div>
+</div>
+      </fieldset>
+<div class="field"><label for="message">Message (optional)</label><textarea id="message" name="message" rows="5" maxlength="500"></textarea><p class="error" id="message-error" aria-live="polite"></p></div>
+      <button type="submit" class="button">Send enquiry</button>
+      <div id="result" class="result" tabindex="-1" aria-live="polite" hidden></div>
+    </form>
+  </main>
+
+  <!-- Site footer -->
+  <footer>
+    <p>&copy; 2026 Ubuntu Paws Rescue (fictional organisation created for a student project).</p>
+    <p><a href="contact.html">Contact us</a> | <a href="enquiry.html">Volunteer or sponsor</a> | <a href="services.html">Animals for adoption</a></p>
+    <p>Images and icons: original artwork for this project. Fonts: system fonts.</p>
+  </footer>
+  <script src="js/script.js" defer></script>
+</body>
+</html>

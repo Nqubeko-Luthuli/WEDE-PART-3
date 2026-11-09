@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact and Shelter Locations in Linden and Soweto | Ubuntu Paws Rescue</title>
+  <meta name="description" content="Find the Linden and Soweto shelters on an interactive map and send Ubuntu Paws Rescue a message about strays, donations or media.">
+  <meta name="keywords" content="animal shelter Linden Johannesburg, animal shelter Soweto, report a stray animal, contact animal rescue">
+  <meta name="author" content="Nqubeko Luthuli">
+  <meta property="og:title" content="Contact and Shelter Locations in Linden and Soweto | Ubuntu Paws Rescue">
+  <meta property="og:description" content="Find the Linden and Soweto shelters on an interactive map and send Ubuntu Paws Rescue a message about strays, donations or media.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <!-- Site header with logo and navigation (same on every page) -->
+  <header>
+    <a href="index.html" class="brand"><img src="images/logo.svg" alt="Ubuntu Paws Rescue logo" width="48" height="48"><span>Ubuntu Paws Rescue</span></a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">Menu</button>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="enquiry.html">Enquiry</a></li><li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="content">
+    <h1>Contact Us</h1>
+    <p>Email: <a href="mailto:hello@ubuntupaws.example">hello@ubuntupaws.example</a> | Phone: 011 000 0000 (fictional)</p>
+    <div class="split">
+      <div class="cards">
+        <section class="card"><h2>Linden Shelter</h2><p>12 Example Road, Linden, Johannesburg</p></section>
+        <section class="card"><h2>Soweto Shelter</h2><p>34 Sample Street, Orlando, Soweto</p></section>
+        <p>Click a marker for the address, or click anywhere on the map to find your nearest shelter.</p>
+      </div>
+      <div id="map" role="region" aria-label="Map showing the Linden and Soweto shelters"></div>
+    </div>
+    <h2>Send us a message</h2>
+    <form id="contact-form" action="mailto:hello@ubuntupaws.example" method="post" enctype="text/plain" data-to="hello@ubuntupaws.example" novalidate>
+<div class="field"><label for="cname">Name *</label><input type="text" id="cname" name="cname" autocomplete="name" required minlength="2"><p class="error" id="cname-error" aria-live="polite"></p></div>
+<div class="field"><label for="cemail">Email *</label><input type="email" id="cemail" name="cemail" autocomplete="email" required><p class="error" id="cemail-error" aria-live="polite"></p></div>
+<div class="field"><label for="cphone">Phone (optional)</label><input type="tel" id="cphone" name="cphone" autocomplete="tel" placeholder="011 000 0000"><p class="error" id="cphone-error" aria-live="polite"></p></div>
+<div class="field"><label for="ctype">Type of message *</label><select id="ctype" name="ctype" required><option value="">Choose one</option><option value="General message">General message</option><option value="Report a stray animal">Report a stray animal</option><option value="Donate supplies">Donate supplies</option><option value="Media request">Media request</option></select><p class="error" id="ctype-error" aria-live="polite"></p></div>
+<div class="field"><label for="cmsg">Message *</label><textarea id="cmsg" name="cmsg" rows="5" required minlength="10" maxlength="1000"></textarea><p class="error" id="cmsg-error" aria-live="polite"></p></div>
+      <button type="submit" class="button">Prepare my email</button>
+      <div id="result" class="result" tabindex="-1" aria-live="polite" hidden></div>
+    </form>
+  </main>
+
+  <!-- Site footer -->
+  <footer>
+    <p>&copy; 2026 Ubuntu Paws Rescue (fictional organisation created for a student project).</p>
+    <p><a href="contact.html">Contact us</a> | <a href="enquiry.html">Volunteer or sponsor</a> | <a href="services.html">Animals for adoption</a></p>
+    <p>Images and icons: original artwork for this project. Fonts: system fonts.</p>
+  </footer>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+  <script src="js/script.js" defer></script>
+</body>
+</html>

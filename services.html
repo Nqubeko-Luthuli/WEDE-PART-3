@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adoption, Fostering and Community Programmes | Ubuntu Paws Rescue</title>
+  <meta name="description" content="Adopt or foster a rescued dog or cat in Johannesburg, join community sterilisation days and search the animals who need homes.">
+  <meta name="keywords" content="adopt a dog Johannesburg, foster a cat, pet sterilisation days Johannesburg, community animal programmes">
+  <meta name="author" content="Nqubeko Luthuli">
+  <meta property="og:title" content="Adoption, Fostering and Community Programmes | Ubuntu Paws Rescue">
+  <meta property="og:description" content="Adopt or foster a rescued dog or cat in Johannesburg, join community sterilisation days and search the animals who need homes.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <!-- Site header with logo and navigation (same on every page) -->
+  <header>
+    <a href="index.html" class="brand"><img src="images/logo.svg" alt="Ubuntu Paws Rescue logo" width="48" height="48"><span>Ubuntu Paws Rescue</span></a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">Menu</button>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html" class="active" aria-current="page">Services</a></li><li><a href="enquiry.html">Enquiry</a></li><li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="content">
+
+    <h1>Our Services</h1>
+    <p>Everything we offer to animals and the community.</p>
+    <div class="cards">
+      <article class="card">
+        <h2>Adoption</h2>
+        <p>Every animal is vaccinated, sterilised and microchipped before adoption.</p>
+        <ul><li>Meet-and-greet sessions</li><li>Home check and adoption contract</li><li>Aftercare support</li></ul>
+      </article>
+      <article class="card">
+        <h2>Fostering</h2>
+        <p>Temporary homes help animals recover and learn to trust people.</p>
+        <ul><li>Food and vet care provided</li><li>Flexible fostering periods</li></ul>
+      </article>
+      <article class="card">
+        <h2>Community programmes</h2>
+        <p>Education and support for responsible pet ownership.</p>
+        <ul><li>Low-cost sterilisation days</li><li>School visits</li><li>Pet food drives</li></ul>
+      </article>
+    </div>
+    <section class="reveal" aria-labelledby="animals-h">
+      <h2 id="animals-h">Animals looking for homes</h2>
+      <p>Search by name or breed, filter by species and sort the list.</p>
+      <div class="tools">
+<div class="field"><label for="q">Search</label><input type="search" id="q" placeholder="e.g. Labrador, playful"><p class="error" id="q-error" aria-live="polite"></p></div>
+<div class="field"><label for="species">Species</label><select id="species"><option value="">All animals</option><option>Dog</option><option>Cat</option></select><p class="error" id="species-error" aria-live="polite"></p></div>
+<div class="field"><label for="sort">Sort by</label><select id="sort"><option value="name">Name (A to Z)</option><option value="age">Age (youngest first)</option><option value="fee">Adoption fee (lowest first)</option></select><p class="error" id="sort-error" aria-live="polite"></p></div>
+      </div>
+      <p id="count" aria-live="polite"></p>
+      <div id="animals" class="cards"></div>
+    </section>
+    <p><a class="button" href="enquiry.html">Make an enquiry</a></p>
+  
+  </main>
+
+  <!-- Site footer -->
+  <footer>
+    <p>&copy; 2026 Ubuntu Paws Rescue (fictional organisation created for a student project).</p>
+    <p><a href="contact.html">Contact us</a> | <a href="enquiry.html">Volunteer or sponsor</a> | <a href="services.html">Animals for adoption</a></p>
+    <p>Images and icons: original artwork for this project. Fonts: system fonts.</p>
+  </footer>
+  <script src="js/script.js" defer></script>
+</body>
+</html>
